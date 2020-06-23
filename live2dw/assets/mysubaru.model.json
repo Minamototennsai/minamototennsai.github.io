@@ -1,105 +1,105 @@
 {
-    "type":"Live2D Model Setting",
-    "name":"mysubaru",
-    "model":"moc/mysubaru.moc",
-    "textures":[
-        "moc/mysubaru.1024/texture_00.png"],
-    "physics":"mysubaru.physics.json",
-    "pose":"mysubaru.pose.json",
-    "layout":{
-        "center_x":0,
-        "y":1.2,
-        "width":2.4
+  "version": "1.0",
+  "model": "moc/mysubaru.moc",
+  "textures": [
+    "moc/mysubaru.1024/texture_00.png"
+  ],
+  "controllers": {
+    "param_hit": {},
+    "param_loop": {},
+    "key_trigger": {},
+    "eye_blink": {
+      "min_interval": 500,
+      "max_interval": 6000,
+      "enabled": true
     },
-	"hit_areas_custom": {
-        "head_x": [-100, 100],
-        "head_y": [100, -100],
-        "body_x": [100, -100],
-        "body_y": [100, -100]
-    },    "motions":{
-        "idle":[
-            {
-                "file":"mtn/idle_00.mtn",
-                "fade_in":2000,
-                "fade_out":2000
-            },
-            {
-                "file":"mtn/idle_01.mtn",
-                "fade_in":2000,
-                "fade_out":2000
-            },
-            {
-                "file":"mtn/idle_02.mtn",
-                "fade_in":2000,
-                "fade_out":2000
-            }],
-        "tap_body":[
-            {
-                "file":"mtn/tapBody_00.mtn",
-                "sound":"snd/tapBody_00.mp3"
-            },
-            {
-                "file":"mtn/tapBody_01.mtn",
-                "sound":"snd/tapBody_01.mp3"
-            },
-            {
-                "file":"mtn/tapBody_02.mtn",
-                "sound":"snd/tapBody_02.mp3"
-            }],
-        "pinch_in":[
-            {
-                "file":"mtn/pinchIn_00.mtn",
-                "sound":"snd/pinchIn_00.mp3"
-            },
-            {
-                "file":"mtn/pinchIn_01.mtn",
-                "sound":"snd/pinchIn_01.mp3"
-            },
-            {
-                "file":"mtn/pinchIn_02.mtn",
-                "sound":"snd/pinchIn_02.mp3"
-            }],
-        "pinch_out":[
-            {
-                "file":"mtn/pinchOut_00.mtn",
-                "sound":"snd/pinchOut_00.mp3"
-            },
-            {
-                "file":"mtn/pinchOut_01.mtn",
-                "sound":"snd/pinchOut_01.mp3"
-            },
-            {
-                "file":"mtn/pinchOut_02.mtn",
-                "sound":"snd/pinchOut_02.mp3"
-            }],
-        "shake":[
-            {
-                "file":"mtn/shake_00.mtn",
-                "sound":"snd/shake_00.mp3",
-                "fade_in":500
-            },
-            {
-                "file":"mtn/shake_01.mtn",
-                "sound":"snd/shake_01.mp3",
-                "fade_in":500
-            },
-            {
-                "file":"mtn/shake_02.mtn",
-                "sound":"snd/shake_02.mp3",
-                "fade_in":500
-            }],
-        "flick_head":[
-            {
-                "file":"mtn/flickHead_00.mtn",
-                "sound":"snd/flickHead_00.mp3"
-            },
-            {
-                "file":"mtn/flickHead_01.mtn",
-                "sound":"snd/flickHead_01.mp3"
-            },
-            {
-                "file":"mtn/flickHead_02.mtn",
-                "sound":"snd/flickHead_02.mp3"
-            }]
+    "lip_sync": {
+      "gain": 5.0,
+      "enabled": true
+    },
+    "mouse_tracking": {
+      "smooth_time": 0.15,
+      "enabled": true
+    },
+    "auto_breath": {
+      "enabled": true
+    },
+    "extra_motion": {
+      "enabled": true
+    },
+    "accelerometer": {
+      "enabled": true
+    },
+    "microphone": {},
+    "transform": {},
+    "face_tracking": {},
+    "param_value": {},
+    "part_opacity": {},
+    "artmesh_opacity": {},
+    "artmesh_culling": {
+      "default_mode": 0
+    },
+    "intimacy_system": {}
+  },
+  "hit_areas": [
+    {
+      "name": "body",
+      "id": "D_REF.PT_BODY_CHEST"
     }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "motions/idling_l2.mtn",
+        "motion_duration": 10000
+      },
+      {
+        "file": "motions/idling_4.mtn",
+        "weight": 5
+      },
+      {
+        "file": "motions/idling_3.mtn"
+      }
+    ],
+    "tap_body": [
+      {
+        "file": "motions/joyful_1.mtn",
+        "sound": "sound/vo_subaru_morning_2.mp3",
+        "text": "今天也加油吧！",
+        "motion_duration": 4000
+      },
+      {
+        "file": "motions/embarrassed_2.mtn",
+        "sound": "sound/vo_subaru_afternoon_1a.mp3",
+        "text": "那个……麻烦借我钱！实际上……我忘记带午饭钱了！",
+        "motion_duration": 9000
+      },
+      {
+        "file": "motions/joyful_3_2a.mtn",
+        "sound": "sound/vo_subaru_afternoon_2a.mp3",
+        "text": "我很喜欢钱，但不是因为贪财啦。是因为闪闪发光！不过这么说你也不明白吧……",
+        "motion_duration": 10000
+      },
+      {
+        "file": "motions/sad_1.mtn",
+        "sound": "sound/vo_subaru_evening_1.mp3",
+        "text": "又要上课，又要偶像特训，我们真的很忙啊~！",
+        "motion_duration": 7000
+      },
+      {
+        "file": "motions/joyful_3_2a_.mtn",
+        "sound": "sound/vo_subaru_personality_5.mp3",
+        "text": "为了你和这十块钱，我可以扮成小狗！汪汪！",
+        "motion_duration": 7000
+      },
+      {
+        "file": "motions/surprise_1.mtn",
+        "sound": "sound/vo_subaru_night_3.mp3",
+        "text": "哇！突然朝我搭话，吓了一跳！"
+      }
+    ]
+  },
+  "physics": "mysubaru.physics.json",
+  "pose": "mysubaru.pose.json",
+  "options": {}
 }
