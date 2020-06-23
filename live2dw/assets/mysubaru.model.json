@@ -11,16 +11,12 @@
         "y":1.2,
         "width":2.4
     },
-    "hit_areas":[
-        {
-            "name":"head",
-            "id":"D_REF.PT_FACE,D_FACE.04,D_FACE.01,D_REF.PT_HAIR_FRONT,D_HAIR_FRONT.01,D_HAIR_BACK.03,D_HAIR_BACK.04,D_HAIR_BACK.01"
-        },
-        {
-            "name":"body",
-            "id":"D_REF.PT_BODY_STOMACH,D_REF.PT_BODY_CHEST"
-        }],
-    "motions":{
+	"hit_areas_custom": {
+        "head_x": [-0.35, 0.6],
+        "head_y": [0.19, -0.2],
+        "body_x": [-0.3, -0.25],
+        "body_y": [0.3, -0.9]
+    },    "motions":{
         "idle":[
             {
                 "file":"mtn/idle_00.mtn",
@@ -37,7 +33,7 @@
                 "fade_in":2000,
                 "fade_out":2000
             }],
-        "tap":[
+        "tap_body":[
             {
                 "file":"mtn/tapBody_00.mtn",
                 "sound":"snd/tapBody_00.mp3"
