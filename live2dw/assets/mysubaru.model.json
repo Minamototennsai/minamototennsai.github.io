@@ -37,7 +37,7 @@
                 "fade_in":2000,
                 "fade_out":2000
             }],
-        "tap_body":[
+        "tap":[
             {
                 "file":"mtn/tapBody_00.mtn",
                 "sound":"snd/tapBody_00.mp3"
