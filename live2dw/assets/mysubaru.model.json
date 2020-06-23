@@ -31,11 +31,11 @@
     "hit_areas":[
         {
             "name":"head",
-            "id":"D_REF.PT_HAIR_FRONT,D_REF.PT_HAIR_FRONT1,D_REF.PT_FACE,D_REF.PT_FACE1"
+            "id":"D_REF.PT_FACE"
         },
         {
             "name":"body",
-            "id":"D_REF.PT_BODY_CHEST,D_REF.PT_BODY_CHEST1,D_REF.PT_BODY_STOMACH,D_REF.PT_BODY_CHEST1"
+            "id":"D_REF.PT_BODY_CHEST"
         }],
     "motions":{
         "idle":[
