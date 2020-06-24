@@ -1,5 +1,11 @@
 {
   "version": "1.0",
+  "bounds": {
+    "width": 9.333882,
+    "height": 20.0,
+    "center_x": -0.2623573,
+    "center_y": 0.0
+  },
   "model": "moc/mysubaru.moc",
   "textures": [
     "moc/mysubaru.1024/texture_00.png"
@@ -50,10 +56,6 @@
   "motions": {
     "idle": [
       {
-        "file": "motions/idling_l2.mtn",
-        "motion_duration": 10000
-      },
-      {
         "file": "motions/idling_4.mtn",
         "weight": 5
       },
@@ -101,7 +103,5 @@
   },
   "physics": "mysubaru.physics.json",
   "pose": "mysubaru.pose.json",
-  "options": {
-    "position_y": -1.5
-  }
+  "options": {}
 }
