@@ -101,5 +101,7 @@
   },
   "physics": "mysubaru.physics.json",
   "pose": "mysubaru.pose.json",
-  "options": {}
+  "options": {
+    "position_y": -1.5
+  }
 }
