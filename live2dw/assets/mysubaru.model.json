@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "model": "moc/mysubaru.moc",
+  "textures": [
+    "moc/mysubaru.1024/texture_00.png"
+  ],
+  "controllers": {
+    "param_hit": {},
+    "param_loop": {},
+    "key_trigger": {},
+    "eye_blink": {
+      "min_interval": 500,
+      "max_interval": 6000,
+      "enabled": true
+    },
+    "lip_sync": {
+      "gain": 5.0,
+      "enabled": true
+    },
+    "mouse_tracking": {
+      "smooth_time": 0.15,
+      "enabled": true
+    },
+    "auto_breath": {
+      "enabled": true
+    },
+    "extra_motion": {
+      "enabled": true
+    },
+    "accelerometer": {
+      "enabled": true
+    },
+    "microphone": {},
+    "transform": {},
+    "face_tracking": {},
+    "param_value": {},
+    "part_opacity": {},
+    "artmesh_opacity": {},
+    "artmesh_culling": {
+      "default_mode": 0
+    },
+    "intimacy_system": {}
+  },
+  "hit_areas": [
+    {
+      "name": "body",
+      "id": "D_REF.PT_BODY_CHEST"
+    }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "motions/idling_4.mtn",
+        "interruptable": true,
+        "weight": 5
+      },
+      {
+        "file": "motions/idling_3.mtn",
+        "interruptable": true
+      }
+    ],
+    "tap_body": [
+      {
+        "file": "motions/embarrassed_2.mtn",
+        "sound": "sound/vo_subaru_afternoon_1a.mp3",
+        "motion_duration": 9000,
+        "interruptable": true
+      },
+      {
+        "file": "motions/joyful_1.mtn",
+        "sound": "sound/vo_subaru_morning_2.mp3",
+        "motion_duration": 4000
+      },
+      {
+        "file": "motions/joyful_3_2a.mtn",
+        "sound": "sound/vo_subaru_afternoon_2a.mp3",
+        "motion_duration": 10000
+      },
+      {
+        "file": "motions/joyful_3_2a_.mtn",
+        "sound": "sound/vo_subaru_personality_5.mp3",
+        "motion_duration": 7000
+      },
+      {
+        "file": "motions/sad_1.mtn",
+        "sound": "sound/vo_subaru_evening_1.mp3",
+        "motion_duration": 7000
+      },
+      {
+        "file": "motions/surprise_1.mtn",
+        "sound": "sound/vo_subaru_night_3.mp3",
+        "motion_duration": 4000
+      }
+    ]
+  },
+  "physics": "mysubaru.physics.json",
+  "pose": "mysubaru.pose.json",
+  "options": {}
+}
