@@ -13,12 +13,12 @@
       "max_interval": 6000,
       "enabled": true
     },
-        "layout":{
+	    "layout":{
         "center_x":0,
         "y":1.2,
         "width":2.4
     },
-	"lip_sync": {
+    "lip_sync": {
       "gain": 5.0,
       "enabled": true
     },
@@ -50,6 +50,26 @@
     {
       "name": "body",
       "id": "D_REF.PT_BODY_CHEST"
+    },
+    {
+      "name": "head",
+      "id": "D_REF.PT_HAIR_FRONT"
+    },
+    {
+      "name": "face",
+      "id": "D_REF.PT_FACE"
+    },
+    {
+      "name": "body_",
+      "id": "D_REF.PT_BODY_STOMACH"
+    },
+    {
+      "name": "left_arm",
+      "id": "D_REF.PT_ARM_L1"
+    },
+    {
+      "name": "right_arm",
+      "id": "D_REF.PT_ARM_R1"
     }
   ],
   "motions": {
@@ -64,47 +84,47 @@
         "interruptable": true
       }
     ],
-    "tap_body": [
-      {
-        "file": "motions/joyful_1.mtn",
-        "sound": "sound/vo_subaru_morning_2.mp3",
-        "text": "今天也加油吧！",
-        "motion_duration": 4000,
-        "interruptable": true
-      },
-      {
-        "file": "motions/embarrassed_2.mtn",
-        "sound": "sound/vo_subaru_afternoon_1a.mp3",
-        "text": "那个……麻烦借我钱！实际上……我忘记带午饭钱了！",
-        "motion_duration": 9000,
-        "interruptable": true
-      },
-      {
-        "file": "motions/joyful_3_2a.mtn",
-        "sound": "sound/vo_subaru_afternoon_2a.mp3",
-        "text": "我很喜欢钱，但不是因为贪财啦。是因为闪闪发光！不过这么说你也不明白吧……",
-        "motion_duration": 10000,
-        "interruptable": true
-      },
-      {
-        "file": "motions/sad_1.mtn",
-        "sound": "sound/vo_subaru_evening_1.mp3",
-        "text": "又要上课，又要偶像特训，我们真的很忙啊~！",
-        "motion_duration": 7000,
-        "interruptable": true
-      },
+    "tap_head": [
       {
         "file": "motions/joyful_3_2a_.mtn",
         "sound": "sound/vo_subaru_personality_5.mp3",
-        "text": "为了你和这十块钱，我可以扮成小狗！汪汪！",
-        "motion_duration": 7000,
+        "motion_duration": 7000
+      }
+    ],
+    "tap_face": [
+      {
+        "file": "motions/joyful_1.mtn",
+        "sound": "sound/vo_subaru_morning_2.mp3",
+        "motion_duration": 4000
+      }
+    ],
+    "tap_body": [
+      {
+        "file": "motions/embarrassed_2.mtn",
+        "sound": "sound/vo_subaru_afternoon_1a.mp3",
+        "motion_duration": 9000,
         "interruptable": true
-      },
+      }
+    ],
+    "tap_body_": [
+      {
+        "file": "motions/joyful_3_2a.mtn",
+        "sound": "sound/vo_subaru_afternoon_2a.mp3",
+        "motion_duration": 10000
+      }
+    ],
+    "tap_left_arm": [
+      {
+        "file": "motions/sad_1.mtn",
+        "sound": "sound/vo_subaru_evening_1.mp3",
+        "motion_duration": 7000
+      }
+    ],
+    "tap_right_arm": [
       {
         "file": "motions/surprise_1.mtn",
         "sound": "sound/vo_subaru_night_3.mp3",
-        "text": "哇！突然朝我搭话，吓了一跳！",
-        "interruptable": true
+        "motion_duration": 4000
       }
     ]
   },
