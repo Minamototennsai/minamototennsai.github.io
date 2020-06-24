@@ -1,11 +1,5 @@
 {
   "version": "1.0",
-  "bounds": {
-    "width": 9.333882,
-    "height": 20.0,
-    "center_x": -0.2623573,
-    "center_y": 0.0
-  },
   "model": "moc/mysubaru.moc",
   "textures": [
     "moc/mysubaru.1024/texture_00.png"
@@ -18,6 +12,11 @@
       "min_interval": 500,
       "max_interval": 6000,
       "enabled": true
+    },
+  "layout":{
+      "center_x":0,
+      "y":1.2,
+      "width":2.4
     },
     "lip_sync": {
       "gain": 5.0,
@@ -103,5 +102,7 @@
   },
   "physics": "mysubaru.physics.json",
   "pose": "mysubaru.pose.json",
-  "options": {}
+  "options": {
+    "scale_factor": 1.25
+  }
 }
